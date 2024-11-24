@@ -1,27 +1,82 @@
-# FavouriteNumberSequenceSaicharan
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.14.
+# Favourite Number Sequence - Saicharan
 
-## Development server
+This Angular project generates and handles a favourite number sequence. It utilizes Angular Material for UI components and is equipped with routing and form functionalities.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Table of Contents
 
-## Code scaffolding
+- [Getting Started](#getting-started)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Development](#development)
+- [Testing](#testing)
+- [Built With](#built-with)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started
 
-## Build
+Follow these instructions to set up and run the project on your local machine.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Prerequisites
 
-## Running unit tests
+Ensure you have the following installed:
+- Node.js (v16 or later)
+- Angular CLI (v16.2.14)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Installation
 
-## Running end-to-end tests
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd favourite-number-sequence-saicharan
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Usage
 
-## Further help
+To start the development server and view the application:
+```bash
+npm start
+```
+The application will run at `http://localhost:4200/`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Development
+
+To build the project:
+```bash
+npm run build
+```
+For continuous development mode:
+```bash
+npm run watch
+```
+
+## Testing
+
+Run unit tests with:
+```bash
+npm test
+```
+
+## Built With
+
+- Angular 16.2.0
+- Angular Material 16.2.14
+- RxJS 7.8.0
+- TypeScript 5.1.3
+
+## Project Structure
+
+- **App Module**: Contains the root module and sets up Angular Material and routing.
+- **App Routing Module**: Manages navigation across components.
+- **Form Component**: Handles forms and user input.
+
+## License
+
+This project is licensed under the MIT License.
