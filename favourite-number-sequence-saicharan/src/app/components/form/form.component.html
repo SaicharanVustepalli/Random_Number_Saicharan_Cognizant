@@ -1,0 +1,36 @@
+<div class="form-container">
+    <mat-card>
+        <form [formGroup]="randomNumberForm" (ngSubmit)="onSubmit()">
+
+        <mat-form-field appearance="fill" class="w-100">
+            <mat-label >Favourite Number </mat-label>
+            <mat-select formControlName="favouriteNumber" (selectionChange)="changeFavouriteNumber($event)">
+              <mat-option *ngFor="let num of numbers" [value]="num.key">
+                  {{ num.value }}
+                </mat-option>
+            </mat-select>
+            <mat-error *ngIf="f['favouriteNumber'].touched && f['favouriteNumber'].invalid">
+                Favourite Number is required.
+              </mat-error>
+          </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label> Number Length </mat-label>
+          <input matInput type="number" formControlName="length" min="1" />
+          <mat-error *ngIf="f['length'].touched && f['length'].invalid">
+            Length must be at least 1.
+          </mat-error>
+        </mat-form-field>
+  
+        <div class="title-center">
+            <button mat-raised-button color="primary" type="submit" [disabled]="!randomNumberForm.valid">Submit</button>
+        </div>
+      </form>
+      <div *ngIf="generatedNumber" class="data-center">
+        <span>Your Number is</span>
+        <span style="margin-top: 5%;" class="generated-number "> <strong>{{ generatedNumber }}</strong></span>
+      </div>
+ 
+    </mat-card>
+  </div>
+  
